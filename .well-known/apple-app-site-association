@@ -6,7 +6,7 @@
       "details":{  
          "8APGK95DJD.jzhai.drchrono.kiosk":{  
             "paths":[  
-               "*"
+               [ "*", "/" ]
             ]
          }
       }
