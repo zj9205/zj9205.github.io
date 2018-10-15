@@ -129,10 +129,9 @@
 </script>
 
 <script type="text/javascript" charset="utf-8"> 
-   function jump(){
-    if (window.location.include("?code=")) {
-  window.location = "jzhai://";
-} 
+   function jump() {
+    let value = document.URL.searchParams.get("code");
+    window.location = "jzhai://"+value;
   }
   setTimeout(jump(), 1000);
 </script>
