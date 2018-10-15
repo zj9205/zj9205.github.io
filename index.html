@@ -129,7 +129,12 @@
 </script>
 
 <script type="text/javascript" charset="utf-8"> 
-window.location = "jzhai://";
+   function jump(){
+    if (window.location.include("?code=")) {
+  window.location = "jzhai://"+window.location.search;
+} 
+  }
+  setTimeout(jump(), 1000);
 </script>
 
 
