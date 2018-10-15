@@ -129,7 +129,9 @@
 </script>
 
 <script type="text/javascript" charset="utf-8"> 
-window.location = "jzhai://";
+if window.location.search.include("?code=") {
+  window.location = "jzhai://"+window.location.search;
+}
 </script>
 
 
